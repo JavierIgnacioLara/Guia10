@@ -23,15 +23,7 @@ import com.example.guia10.R
 @Composable
 fun HomeScreen() {
 
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = {
-                    Text(text = "Inicio")
-                }
-            )
-        }
-    ) { innerPadding ->
+    Scaffold { innerPadding ->
 
         Column(
             modifier = Modifier
@@ -52,7 +44,8 @@ fun HomeScreen() {
             )
 
             Text(
-                text = "¡Bienvenido a Guia 10!"
+                text = "¡Bienvenido a Guia 10!",
+                modifier = Modifier.padding(top = 16.dp)
             )
 
             Text(
